@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Data
 @Table(name = "menu")
@@ -29,5 +31,7 @@ public class Menu {
 
     @NotBlank
     private Long markUp;
+
+    private Long recipeId;
 
 }
